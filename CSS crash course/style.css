@@ -1,0 +1,211 @@
+/* This command applies to everything in the sheet and resets the margins. Headers and paragraphs have
+default margins and padding, so this resets it all to 0, and can be set with the commands stated below*/
+/*
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+*/
+
+body{
+    
+    
+    /*Changing the text*/
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px; 
+    font-weight: x-small;
+
+    /*same as above*/
+    font: x-small 16px Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+    
+    /*Changing the line height*/
+    line-height: 2em;
+    margin:0;
+}
+
+/* Customizing the links in the list*/
+
+a{
+    text-decoration:none;
+    color:#000;
+
+}
+
+a:hover {
+    color:red;
+}
+
+a:active{
+    color:green;
+}
+
+a:visited{
+    color:blue;
+}
+
+
+.categories{
+    border: 5px red solid;
+    border-radius:0%;
+}
+
+.categories h2{
+    text-align:center;
+}
+
+.categories ul {
+    padding-left:20px;
+    list-style:none;
+}
+
+/*Style for the class 'container*/
+.container{
+    width:80%;
+    margin:auto;
+}
+/*Style for the class 'box-1'*/
+.box-1{
+
+background-color:#333333;
+color:#fff;
+
+/*border syntax */
+border-top: 5px red solid;
+border-left: 5px red solid;
+border-right: 5px red solid;
+border-bottom: 5px red solid;
+
+border-width: 5px;
+
+border-top-style: double;
+
+/* Regardless of how many commands for the border there are, the last command
+will be followed*/
+/*Syntax is exactly the same for margin and padding*/
+
+border: 5px red solid;
+
+}
+
+/* Text altering with the heading of box-1 only*/
+.box-1 h1{
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.box-2{
+    border: 3px dotted gray;
+    padding: 20px;
+    margin: auto;
+}
+
+/*Style for the list elements*/
+.categories li{
+    padding-bottom:6px;
+    border-bottom: 1px black;
+    list-style-image: url('./assets/tick.jpg')
+}
+
+
+.myform {
+    padding:20px;
+
+}
+
+.myform .form-group {
+    padding-bottom: 15px;
+
+}
+
+.myform label{
+    display:block;
+}
+
+.myform input[type=text] {
+    padding:8px;
+    width: 100%;
+}
+
+.myform input[type=submit] {
+    background-color:red;
+    color: blue;
+    padding: 10px 15px;
+}
+
+.button {
+    color:blue;
+    background-color: red;
+}
+.button:hover {
+    background-color:yellow;
+}
+
+.clr {
+    clear:both;
+}
+.block {
+    float:left;
+    width:33.3%;
+    border: 1px solid #ccc;
+    box-sizing:border-box;
+}
+
+#main-block {
+    float:left;
+    width:70%;
+    padding:10px;
+    box-sizing:border-box;
+
+}
+
+#sidebar {
+    float:right;
+    width:30%;
+    padding:10px;
+    background-color: #000;
+    box-sizing:border-box;
+    color: white;
+}
+
+.p-box {
+    width:800px;
+    height:500px;
+    border:1px solid black;
+    margin-top: 30px;
+    position:relative;
+    background-image:url(./assets/ChirsP.jpg);
+    background-position: center center;
+    
+}
+
+.p-box h3 {
+    position:absolute;
+    top:40px;
+}
+
+.fix-me {
+    position:fixed;
+    top:400px;
+}
+
+.mylist li:first-child {
+    background : red
+}
+
+.mylist li:last-child {
+    background : blue
+}
+
+.mylist li:nth-child(5) {
+    background: yellow
+}
+
+.mylist li:nth-child(even) {
+    background:grey
+}
